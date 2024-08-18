@@ -1,0 +1,18 @@
+<!--pages/myInfo/myInfo.wxml-->
+<view class="block">
+  <t-navbar
+    t-class-placeholder="t-navbar-placeholder"
+    t-class-content="t-navbar-content"
+    title="击剑动作识别小程序"
+    t-class-title="nav-title"
+  />
+</view>
+<view class="avatar-container">
+  <t-avatar class="avatar-example" t-class-content="external-class-content" aria-label="字符头像">M</t-avatar>
+  <text class="login-text" >马佳艺</text>
+</view>
+<t-tab-bar t-class="t-tab-bar" value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">
+<t-tab-bar-item wx:for="{{list}}" wx:key="value" value="{{item.value}}" icon="{{item.icon}}">
+    {{item.label}}
+  </t-tab-bar-item>
+</t-tab-bar>

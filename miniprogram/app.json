@@ -1,0 +1,14 @@
+{
+	"pages": [
+    "pages/home/home",
+    "pages/recoGb/recoGb",
+    "pages/lesson1/lesson1",
+    "pages/index/index",
+    "pages/record/record",
+    "pages/my/my",
+    "pages/myInfo/myInfo"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  }
+}

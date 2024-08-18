@@ -1,0 +1,14 @@
+{
+  "name": "miniprogram-1",
+  "version": "1.0.0",
+  "description": "## 项目介绍 本项目是一个实用的LBS定位工具，功能地址搜索定位，经纬度搜索定位，地图选点确认信息等。",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tdesign-miniprogram": "^1.5.1"
+  }
+}

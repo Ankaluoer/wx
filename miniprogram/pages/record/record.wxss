@@ -1,0 +1,25 @@
+/* pages/record/record.wxss */
+page{
+  background-color: #212121;
+  --td-tab-bar-active-color:#AEF3F2;
+  --td-tab-bar-active-bg:#333333;
+  --td-tab-bar-bg-color:#6E7480;
+  --td-tab-bar-border-color:#6E7480;
+  --td-navbar-bg-color:#6E7480;
+  --td-text-color-secondary:#F2F2F2;
+}
+.panel-item {
+  margin-bottom: 32rpx;
+}
+
+.panel-item::after {
+  border: 0;
+}
+.text {
+  font-size: 40rpx;
+  color: var(--td-text-color-secondary);
+  line-height: 44rpx;
+  margin-bottom: 16rpx;
+  margin-top: 16rpx;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,35 @@
+/* pages/my/my.wxss */
+page{
+  background-color: #212121;
+  --td-tab-bar-active-color:#AEF3F2;
+  --td-tab-bar-active-bg:#333333;
+  --td-tab-bar-bg-color:#6E7480;
+  --td-tab-bar-border-color:#6E7480;
+  --td-navbar-bg-color:#6E7480;
+}
+.panel-item {
+  margin-bottom: 32rpx;
+}
+
+.panel-item::after {
+  border: 0;
+}
+.avatar-example:not(:last-child) {
+  margin-right: 64rpx;
+}
+.avatar-container {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 16rpx;
+  background-color: #F2F2F2;
+  border-radius: 30rpx;
+}
+.login-text {
+  margin-left: 8px;
+  font-size: 28rpx;
+  color: #333333;
+}

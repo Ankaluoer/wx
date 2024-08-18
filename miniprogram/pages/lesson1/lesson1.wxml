@@ -1,0 +1,28 @@
+<!--pages/lesson1/lesson1.wxml-->
+<view class="block">
+  <t-navbar
+    t-class-placeholder="t-navbar-placeholder"
+    t-class-content="t-navbar-content"
+    title="击剑动作识别小程序"
+    t-class-title="nav-title"
+  />
+</view>
+<view class="example-search">
+  <t-search placeholder="搜索动作" shape="round" />
+</view>
+<view class="tr">
+  <view class="col">
+    <view class="text">弓步</view>
+    <t-image src="{{gbimageSrc}}" shape="round" mode="aspectFill" width="150" height="150" aria-label="弓步课程头图" />
+  </view>
+  <view class="col">
+    <view class="text">实战姿势</view>
+    <t-image src="{{szimageSrc}}" shape="round" mode="aspectFill" width="150" height="150" aria-label="实战姿势课程头图" />
+  </view>
+</view>
+
+<t-tab-bar t-class="t-tab-bar" value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">
+<t-tab-bar-item wx:for="{{list}}" wx:key="value" value="{{item.value}}" icon="{{item.icon}}">
+    {{item.label}}
+  </t-tab-bar-item>
+</t-tab-bar>

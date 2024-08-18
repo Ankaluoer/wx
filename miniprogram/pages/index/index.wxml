@@ -1,0 +1,11 @@
+<image class="topimg" src="../../images/gb.jpg"></image>
+<view class="title">击剑动作</view>
+<view class="tips">击剑动作识别小插件将获取您的动作信息，提供动作识别、弓步动作计数能力</view>
+<button class="mainbtn" bindtap="photoCapture">上传图片</button>
+<image src="{{codeImg}}"></image>
+
+<button class="mainbtn" bindtap="downloadImage">获得图片</button>
+
+<button type="primary" bind:tap="videoCapture">点击拍摄视频</button>
+<image src="{{videoLink}}"></image>
+<video src="http://192.168.110.131:5000/vedio" controls></video>

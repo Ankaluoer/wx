@@ -1,0 +1,27 @@
+<!--pages/home/home.wxml-->
+<view class="block">
+  <t-navbar
+    t-class-placeholder="t-navbar-placeholder"
+    t-class-content="t-navbar-content"
+    title="击剑动作识别小程序"
+    t-class-title="nav-title"
+  />
+</view>
+<view class="container">
+  <t-image src="{{imageSrc}}" width="300" height="300" shape="round" aria-label="ai击剑首图" style="margin-top: 20px;"/>
+</view>
+<view class="button-example">
+  <t-button style="color:#212121" theme="primary" icon="camera" content="视频动作计数" size="large" block></t-button>
+</view>
+<view class="button-example">
+  <t-action-sheet id="t-action-sheet" usingCustomNavbar bind:selected="handleSelected" />
+  <t-button bind:tap="handleAction" style="color:#212121" theme="primary" icon="center-focus-strong" content="拍照动作识别" size="large" block></t-button>
+</view>
+<view class="button-example">
+  <t-button style="color:#212121" theme="primary" icon="catalog" content="辅助制定计划" size="large" block></t-button>
+</view>
+<t-tab-bar t-class="t-tab-bar" value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">
+<t-tab-bar-item wx:for="{{list}}" wx:key="value" value="{{item.value}}" icon="{{item.icon}}">
+    {{item.label}}
+  </t-tab-bar-item>
+</t-tab-bar>

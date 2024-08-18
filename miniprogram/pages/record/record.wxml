@@ -1,0 +1,40 @@
+<!--pages/record/record.wxml-->
+<view class="block">
+  <t-navbar
+    t-class-placeholder="t-navbar-placeholder"
+    t-class-content="t-navbar-content"
+    title="击剑动作识别小程序"
+    t-class-title="nav-title"
+  />
+</view>
+
+<t-cell
+  title="选择日期"
+  hover
+  note="{{dateText || ''}}"
+  arrow
+  data-mode="date"
+  bindtap="showPicker"
+  class="test"
+  t-class="panel-item"
+/>
+
+<!-- 年月日 -->
+<t-date-time-picker
+  title="选择日期"
+  visible="{{dateVisible}}"
+  mode="date"
+  defaultValue="{{date}}"
+  format="YYYY-MM-DD"
+  bindchange="onConfirm"
+  bindpick="onColumnChange"
+  bindcancel="hidePicker"
+  start="{{start}}"
+  end="{{end}}"
+/>
+<view class="text">该日弓步数量： 5</view>
+<t-tab-bar t-class="t-tab-bar" value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">
+<t-tab-bar-item wx:for="{{list}}" wx:key="value" value="{{item.value}}" icon="{{item.icon}}">
+    {{item.label}}
+  </t-tab-bar-item>
+</t-tab-bar>

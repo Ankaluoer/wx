@@ -1,0 +1,19 @@
+/* pages/home/home.wxss */
+page{
+  background-color: #212121;
+  --td-brand-color:#EBEBF2;
+  --td-tab-bar-active-color:#AEF3F2;
+  --td-tab-bar-active-bg:#333333;
+  --td-tab-bar-bg-color:#6E7480;
+  --td-tab-bar-border-color:#6E7480;
+  --td-navbar-bg-color:#6E7480;
+}
+.button-example {
+  margin: 50rpx;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

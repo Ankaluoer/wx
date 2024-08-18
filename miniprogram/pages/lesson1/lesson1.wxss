@@ -1,0 +1,38 @@
+/* pages/lesson1/lesson1.wxss */
+page{
+  background-color: #212121;
+  --td-brand-color:#EBEBF2;
+  --td-tab-bar-active-color:#AEF3F2;
+  --td-tab-bar-active-bg:#333333;
+  --td-tab-bar-bg-color:#6E7480;
+  --td-tab-bar-border-color:#6E7480;
+  --td-navbar-bg-color:#6E7480;
+  --td-search-bg-color:#AEF3F2;
+  --td-text-color-secondary:#F2F2F2;
+}
+.example-search {
+  background-color: var(--bg-color-demo);
+  padding: 16rpx 32rpx;
+}
+
+.example-search:not(:last-child) {
+  margin-bottom: 32rpx;
+}
+.tr {
+  display: flex;
+}
+
+.col {
+  margin: 0 32rpx;
+}
+
+.tr+.tr {
+  margin-top: 48rpx;
+}
+
+.text {
+  font-size: 40rpx;
+  color: var(--td-text-color-secondary);
+  line-height: 44rpx;
+  margin-bottom: 10rpx;
+}
