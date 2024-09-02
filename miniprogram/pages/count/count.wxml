@@ -1,0 +1,29 @@
+<!--pages/count/count.wxml-->
+<view class="block">
+  <t-navbar
+    t-class-placeholder="t-navbar-placeholder"
+    t-class-content="t-navbar-content"
+    class="block"
+    title="拍照动作识别（弓步）"
+    left-arrow
+    bind:go-back="handleBack"
+  />
+</view>
+<view class="container">
+  <t-image src="{{imageSrc}}" width="250" height="250" shape="round" aria-label="ai击剑首图" style="border: 5px dashed #ccc;margin-top: 20px;"/>
+</view>
+<view class="button-example">
+  <t-button theme="primary" size="small" block bindtap="vedioCapture">上传视频</t-button>
+</view>
+<view class="button-example">
+  <t-button theme="primary" size="small" block bindtap="downloadVedio">生成分析</t-button>
+</view>
+<view class="container">
+  <video src="http://192.168.110.251:5000/vedio" controls></video>
+</view>
+
+<t-tab-bar t-class="t-tab-bar" value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">
+<t-tab-bar-item wx:for="{{list}}" wx:key="value" value="{{item.value}}" icon="{{item.icon}}">
+    {{item.label}}
+  </t-tab-bar-item>
+</t-tab-bar>

@@ -11,7 +11,7 @@
   <t-image src="{{imageSrc}}" width="300" height="300" shape="round" aria-label="ai击剑首图" style="margin-top: 20px;"/>
 </view>
 <view class="button-example">
-  <t-button style="color:#212121" theme="primary" icon="camera" content="视频动作计数" size="large" block></t-button>
+  <t-button style="color:#212121" theme="primary" icon="camera" content="视频动作计数" size="large" block bind:tap="toCount"></t-button>
 </view>
 <view class="button-example">
   <t-action-sheet id="t-action-sheet" usingCustomNavbar bind:selected="handleSelected" />

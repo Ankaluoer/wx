@@ -1,0 +1,19 @@
+/* pages/count/count.wxss */
+page{
+  background-color: #212121;
+  --td-tab-bar-active-color:#AEF3F2;
+  --td-tab-bar-active-bg:#333333;
+  --td-tab-bar-bg-color:#6E7480;
+  --td-tab-bar-border-color:#6E7480;
+  --td-brand-color:#6E7480;
+  --td-navbar-bg-color:#6E7480;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button-example {
+  margin: 32rpx;
+}

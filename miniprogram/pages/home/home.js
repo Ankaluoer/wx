@@ -50,6 +50,12 @@ Page({
     }
   },
   
+  toCount(e) {
+    wx.redirectTo({
+      url: '/pages/count/count',
+    })
+  },
+
   onChange(e) {
     this.setData({
       value: e.detail.value,

@@ -6,7 +6,8 @@
     "pages/index/index",
     "pages/record/record",
     "pages/my/my",
-    "pages/myInfo/myInfo"
+    "pages/myInfo/myInfo",
+    "pages/count/count"
   ],
   "window": {
     "navigationStyle": "custom"
